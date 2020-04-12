@@ -1,25 +1,31 @@
-ï»¿echo .....Jump to folder E:\æž¶æž„\å­¦ä¹ ç¬”è®°
-cd /d E:\æž¶æž„\å­¦ä¹ ç¬”è®°
+@echo off
+echo .....Jump to folder E:\¼Ü¹¹\Ñ§Ï°±Ê¼Ç
+cd /d E:\¼Ü¹¹\Ñ§Ï°±Ê¼Ç
 
-echo .....!!!!æ·»åŠ è¦æäº¤çš„å†…å®¹
+echo -------------------
+echo .....Ìí¼ÓÒªÌá½»µÄÄÚÈÝ
 git add .
 
-echo .....!!!!OK
+echo -------------------
+echo .....add . OK
+echo -------------------
 
-echo .....!!!!æäº¤æœ¬åœ°ç‰ˆæœ¬åº“
+echo .....Ìá½»±¾µØ°æ±¾¿â
 git commit -m  %date:~0,4%/%date:~5,2%/%date:~8,2%-desktop
+echo -------------------
+echo .....Ìá½»±¾µØ°æ±¾¿âOK
+echo -------------------
 
-echo .....!!!!OK
+echo .....Ìá½»gitee
+git push gitee master
+echo -------------------
+echo .....Ìá½»gitee OK
+echo -------------------
 
-echo .....!!!!æäº¤gitee
-git push gitee
+echo .....Ìá½»github
+git push origin master
+echo -------------------
+echo .....github OK
 
-echo .....!!!!æäº¤gitee OK
-
-echo .....!!!!æäº¤github
-git push origin
-
-echo .....!!!!æäº¤github OK
-
-echo .....ä»»æ„é”®é€€å‡º
-pause>nul
+echo -------------------
+pause&exit
